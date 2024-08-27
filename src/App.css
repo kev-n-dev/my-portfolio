@@ -1,0 +1,133 @@
+/* src/App.css */
+body, html, #root, .app {
+  height: 100%;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #252526;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+  transition: transform 0.3s ease;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+.sidebar h2 {
+  color: #c5c5c5;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #d4d4d4;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li a:hover {
+  color: #ffffff;
+}
+
+.sidebar ul li a svg {
+  margin-right: 10px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #1e1e1e;
+  box-sizing: border-box;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: #d4d4d4;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+/* Media Queries */
+
+/* Tablets and small screens */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.open div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger.open div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+}
