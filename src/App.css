@@ -36,7 +36,8 @@ body, html, #root, .app {
     position: absolute;
      transition: transform 0.3s ease;  
      flex-grow: 1;
-    height: 95%; 
+    height: 100%; 
+    width: 100%;
     background-image: url('public/img/kcBg.png');
     background-size: cover;
     background-position: center;
@@ -119,27 +120,10 @@ body, html, #root, .app {
   box-sizing: border-box;
 }
 
-/* Hamburger Button */
-.hamburger {
-  display: none;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 1000;
-  cursor: pointer;
-  font-size: 1.5rem;
-}
+ 
 
-.hamburger div {
-  width: 30px;
-  height: 3px;
-  background-color: #d4d4d4;
-  margin: 6px 0;
-  transition: 0.3s;
-}
-
-/* Media Queries */
-
+ 
+ 
 /* Tablets and small screens */
 @media (max-width: 768px) {
   .app {
