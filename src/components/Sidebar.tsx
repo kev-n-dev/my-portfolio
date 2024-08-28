@@ -8,7 +8,7 @@ import SocialLinks from './Socials';
 import { FaHouse } from 'react-icons/fa6';
 const Sidebar: React.FC = () => {
   return (
-    <div className="sidebar">
+    <div >
        <ProfilePhoto
         src="public/img/kevin.png" 
         alt="Kevin Christopher"
