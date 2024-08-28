@@ -1,12 +1,18 @@
 // src/pages/Blog.tsx
 import React from 'react';
+import EmbeddedPage from '../components/EmbededPage';
 
 const Blog: React.FC = () => {
   return (
-    <div>
-      <h1>BLOG</h1>
-      <p>Welcome to my Blog</p>
-    </div>
+ 
+
+<div className="embedded-page-container">
+<iframe  
+  src="https://coding-corps.github.io/CodingCompass/#/" 
+  className=" blog embedded-page"
+   allowFullScreen
+></iframe>
+</div>
   );
 };
 
