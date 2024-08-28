@@ -35,8 +35,10 @@ const MySkills: React.FC = () => {
        Dive in to explore the areas I'm passionate about and see how I'm continuously enhancing my craft.
       </p>
       <br/>
-      <SkillList skills={skills} />
-    </div>
+      <div className='skillSection'>
+        <SkillList skills={skills} />
+      </div>
+     </div>
   );
 };
 
