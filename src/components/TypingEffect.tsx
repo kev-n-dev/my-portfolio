@@ -9,7 +9,7 @@ const blink = keyframes`
 
 const AnimatedText = styled.span`
   font-size: inherit; /* Ensures font size matches the parent */
-  color: #3091ff; /* Inherits text color from parent */
+  color: #040b14; /* Inherits text color from parent */
   white-space: nowrap; /* Prevents wrapping */
   position: relative; /* Positions the cursor absolutely */
 `;
@@ -22,6 +22,7 @@ const Cursor = styled.span`
   position: absolute;
   top: 0;
   right: 0;
+  padding-left:2px;
   animation: ${blink} 0.8s step-start infinite;
 `;
 
