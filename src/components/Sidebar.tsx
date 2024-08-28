@@ -10,18 +10,18 @@ const Sidebar: React.FC = () => {
   return (
     <div >
        <ProfilePhoto
-        src="public/img/kevin.png" 
+        src="img/kevin.png" 
         alt="Kevin Christopher"
         size={100} 
       />
       <h2>Kevin Christopher</h2>
       <SocialLinks></SocialLinks>
-      <nav>
+      <nav className='navigation'>
         <ul>
         <li><Link to="/"> <FaHouse/>Home </Link></li>
           <li><Link to="/about"><FaUser /> About</Link></li>
           <li><Link to="/skills"><FaTools /> MySkills</Link></li>
-          <li><Link to="/work"><FaBriefcase /> Work</Link></li>
+          <li><Link to="/work"><FaBriefcase /> Resume</Link></li>
           <li><Link to="/contact"><FaEnvelope /> Contact</Link></li>
           <li><Link to="/blog"><FaBlog /> Blog</Link></li>
         </ul>

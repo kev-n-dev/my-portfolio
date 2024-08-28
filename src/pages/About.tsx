@@ -1,10 +1,27 @@
 // src/pages/About.tsx
-import React from 'react';
+ import Profile from '../components/profileCard';
 
 const About: React.FC = () => {
+
+
+
   return (
-    <div>
-      <h1>ABOUT</h1>
+
+    
+    <div className='about'>
+     
+     {/* <!-- Section Title --> */}
+      <div   data-aos="fade-up">
+        <h2>About</h2>
+        <p> Meet Kevin Christopher,<br/> a dedicated software developer with a passion for building innovative solutions and crafting user-friendly experiences.<br/> 
+         His expertise spans a wide range of programming languages and frameworks, including React, JavaScript, Python, and more.<br/> 
+          Kevin thrives on challenging projects that push him to grow professionally, always eager to learn and improve. <br/> 
+      </p>
+
+      <Profile></Profile>
+      </div>
+ 
+
     </div>
   );
 };
