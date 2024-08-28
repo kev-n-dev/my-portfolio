@@ -1,6 +1,5 @@
 // src/pages/Blog.tsx
 import React from 'react';
-import EmbeddedPage from '../components/EmbededPage';
 
 const Blog: React.FC = () => {
   return (
