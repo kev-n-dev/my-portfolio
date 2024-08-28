@@ -3,10 +3,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaUser, FaTools, FaBriefcase, FaEnvelope, FaBlog } from 'react-icons/fa';
+import ProfilePhoto from './ProfilePic';
 
 const Sidebar: React.FC = () => {
   return (
     <div className="sidebar">
+       <ProfilePhoto
+        src="public/img/kevin.png" 
+        alt="Kevin Christopher"
+        size={100} 
+      />
       <h2>Portfolio</h2>
       <nav>
         <ul>
