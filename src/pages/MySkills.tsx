@@ -28,14 +28,16 @@ const skills = [
 const MySkills: React.FC = () => {
   return (
     <div className='skillsContain'>
+      <div className='skillHeader'>
       <h1>My Skills: A Journey of Continuous Learning</h1>
-      <p className='skillHeader'>
+
+      <p >
       In the ever-evolving world of technology, I'm committed to constantly expanding my expertise and mastering new tools.<br/>
        My skill set reflects a blend of seasoned experience and a relentless drive to learn and grow. <br/>
        Dive in to explore the areas I'm passionate about and see how I'm continuously enhancing my craft.
       </p>
-      <br/>
-      <div className='skillSection'>
+      </div>
+           <div className='skillSection'>
         <SkillList skills={skills} />
       </div>
      </div>

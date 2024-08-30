@@ -1,4 +1,4 @@
- 
+
 // src/components/Sidebar.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -8,17 +8,20 @@ import SocialLinks from './Socials';
 import { FaHouse } from 'react-icons/fa6';
 const Sidebar: React.FC = () => {
   return (
-    <div >
-       <ProfilePhoto
-        src="img/kevin.png" 
-        alt="Kevin Christopher"
-        size={100} 
-      />
-      <h2>Kevin Christopher</h2>
-      <SocialLinks></SocialLinks>
+    <div>
+      <div className='title'>
+        <ProfilePhoto
+          src="img/kevin.png"
+          alt="Kevin Christopher"
+          size={100}
+        />
+        <h2>Kevin Christopher</h2>
+        <div className='socialLinks'>        <SocialLinks></SocialLinks>
+        </div>
+      </div>
       <nav className='navigation'>
         <ul>
-        <li><Link to="/"> <FaHouse/>Home </Link></li>
+          <li><Link to="/"> <FaHouse />Home </Link></li>
           <li><Link to="/about"><FaUser /> About</Link></li>
           <li><Link to="/skills"><FaTools /> MySkills</Link></li>
           <li><Link to="/work"><FaBriefcase /> Resume</Link></li>

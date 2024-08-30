@@ -9,7 +9,7 @@ const blink = keyframes`
 
 const AnimatedText = styled.span`
   font-size: inherit; /* Ensures font size matches the parent */
-  color: #040b14; /* Inherits text color from parent */
+  color: #00b7ff; /* Inherits text color from parent */
   white-space: nowrap; /* Prevents wrapping */
   position: relative; /* Positions the cursor absolutely */
 `;

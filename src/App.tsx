@@ -14,7 +14,9 @@ const App: React.FC = () => {
         <div className="sidebar">
           <Sidebar />
         </div>
-
+        <div className="mobileNav">
+          <Sidebar />
+        </div>
         <div className="main">
           <MainContent />
         </div>

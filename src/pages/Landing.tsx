@@ -11,13 +11,12 @@ const Landing: React.FC = () => {
   return (
     <div className='kevinBg' style={containerStyle}>
       <div >
-        <h1>
-          <span style={{ paddingLeft: '20px', paddingTop:"20px", fontSize: '90px' }}>Kevin Christopher</span> <br />
-           <p style={{ paddingLeft: '20px' }} >... <TypingEffect /></p> 
+        <h1 >
+          <span className='landingName'  >Kevin Christopher</span> <br />
+           <p className="typing" style={{ paddingLeft: '20px' }} >... <TypingEffect /></p> 
         </h1>
       </div>
     </div>
   );
 };
-
-export default Landing;
+ export default Landing;

@@ -1,5 +1,6 @@
 /* src/App.css */
-@import 'bs';
+@import 'styles/bs';
+@import 'styles/darkMode';
 
 body,
 html,
@@ -8,10 +9,14 @@ html,
   margin: 0;
   font-family: "Raleway", sans-serif;
   overflow: hidden;
-
   background-color: inherit;
   color: #d4d4d4;
+
+  &.darkmode {
+    color: #ffffff !important; // Dark mode text color
+  }
 }
+
 
 
 .app {
@@ -19,29 +24,32 @@ html,
   height: 100vh;
 }
 
+
 .about {
   text-align: justify !important;
-  /* Full justify the text */
-  height: auto !important;
   color: #1e1e1e;
-  padding-top: 20px;
-  padding-left: 5%;
+padding: 20px;
+padding-bottom: 40px;
   width: auto;
   list-style-type: none;
-  /* Removes bullet points from all list items */
 
   ul {
     list-style-type: none;
-    /* Removes bullet points from all list items */
     padding-left: 0;
-    /* Optional: Remove default padding */
     margin-left: 0;
-    /* Optional: Remove default margin */
   }
-
-
-
 }
+
+.about {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  height: 600px  ;
+  overflow-y: scroll !important;
+}
+
+
+
 
 .about .proPicImage {
   float: inline-start;
@@ -54,6 +62,8 @@ html,
 
 
 .main-content {
+  
+  padding-bottom: 10vh;
   width: 100%;
   /* Make the width take up the full available space */
   min-height: 100vh;
@@ -81,7 +91,8 @@ html,
 .sidebar {
   text-align: center;
   padding-top: 30px;
-  width: 275px !important;
+  padding: 20px;
+  width: fit-content !important;
   /* Default fixed width */
   background-color: #040b14;
   box-sizing: border-box;
@@ -141,13 +152,7 @@ html,
 
 }
 
-
-.landingText {
-  color: rgb(255, 255, 255);
-  padding-top: 10%;
-  padding-left: 4%;
-
-}
+ 
 
 .sidebar h2 {
   color: #c5c5c5;
@@ -213,17 +218,7 @@ html,
   }
 }
 
-/* Mobile screens */
-@media (max-width: 480px) {
-  .sidebar {
-    display: none;
-  }
-
-  .main-content {
-    padding: 10px;
-  }
-}
-
+ 
 
 /// contact me please
 
@@ -281,9 +276,9 @@ html,
 
 .blog {
   min-width: 170vh;
-  width: 100% !important;
+  width: 100%  ;
   /* Make it take up the full width */
-  height: 100vh !important;
+  height: 100vh  ;
   /* Make it take up the full height of the viewport */
   background-color: #c8c8cd;
 }
@@ -293,22 +288,18 @@ html,
 
 // skills 
 .skillSection {
-  padding: 5px;
+  padding: 20px;
   overflow-y: scroll !important;
   /* Enable vertical scrolling if the content exceeds the viewport height */
   height: 400px;
 
   border-radius: 1px;
-   border-radius: 7px;
-  box-shadow: inset 6px 6px 5px #eaeaea,
-    inset -6px -6px 5px #ffffff;
-  /* For WebKit browsers (Chrome, Safari) */
-
-
+  border-radius: 7px;
+ 
 
 }
 
-.resume{
+.resume {
   color: #040b14;
   padding: 50px;
 }
@@ -316,11 +307,11 @@ html,
 .skillsContain {
 
   color: #040b14;
-  min-width: 170vh;
-  padding: 10px;
-  width: 90% !important;
+  min-width: 100vh;
+  padding: 20px;
+  width: 90%  ;
   /* Make it take up the full width */
-  height: 100vh !important;
+  height: 100vh  ;
   /* Make it take up the full height of the viewport */
 }
 
