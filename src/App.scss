@@ -264,6 +264,10 @@ padding-bottom: 40px;
   position: absolute; /* or relative, based on parent positioning */
   top: 0;
   left: 12%;
+  background-color: #283227!important;
+  &::-webkit-scrollbar {
+    display: none!important;
+}
 }
 
 

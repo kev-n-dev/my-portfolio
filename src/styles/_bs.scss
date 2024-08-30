@@ -491,19 +491,17 @@
      }
 
      .blog.embedded-page {
-        overflow: scroll!important;
-        width: 380px!important;
-        height: 100%;
+        overflow: hidden!important;
+        width: 90%!important;
         margin-left: 0px!important;
-        padding-left: 0px!important;
-        border: none; /* Remove border if needed */
+padding: 20px!important;       
+ border: none; /* Remove border if needed */
         position: absolute; /* or relative, based on parent positioning */
-        top: 200px!important;
+        top: 215px!important;
+        border: 0!important;
         left: 0%!important;
-
         &::-webkit-scrollbar {
-            display: none;
-
+            display: none!important;
         }
       }
       
