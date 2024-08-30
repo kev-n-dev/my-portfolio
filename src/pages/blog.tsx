@@ -5,7 +5,7 @@ const Blog: React.FC = () => {
   return (
  
 
-<div className="embedded-page-container">
+<div  >
 <iframe  
   src="https://coding-corps.github.io/CodingCompass/#/" 
   className=" blog embedded-page"
