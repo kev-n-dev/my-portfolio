@@ -178,6 +178,23 @@
 
  // Adjust styles for small screens (e.g., mobile)
  @media (max-width: 768px) {
+
+    .mobileNav{
+        display: flex;
+        width: 780px;
+        .navigation{
+            padding-bottom: 0px;
+            width: 100%!important;
+        }
+        height: auto;
+    }
+    .blog.embedded-page {
+        overflow: hidden !important;
+        width: 90% !important;
+        margin-left: 0px !important;
+        padding: 20px !important;
+        top: 275px!important;
+    }
      .about {
          padding: 20px;
          overflow-y: scroll !important;
@@ -383,7 +400,9 @@
      }
 
      .mobileNav {
-         display: block;
+         display: block!important;
+         width: 50vh; // Make the navigation bar span the full width of the page
+
      }
 
      .app {
