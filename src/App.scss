@@ -28,8 +28,8 @@ html,
 .about {
   text-align: justify !important;
   color: #1e1e1e;
-padding: 20px;
-padding-bottom: 40px;
+  padding: 20px;
+  padding-bottom: 40px;
   width: auto;
   list-style-type: none;
 
@@ -44,7 +44,7 @@ padding-bottom: 40px;
   padding-top: 10px;
   padding-bottom: 40px;
   padding-left: 40px;
-  height: 600px  ;
+  height: 600px;
   overflow-y: scroll !important;
 }
 
@@ -62,9 +62,11 @@ padding-bottom: 40px;
 
 
 .main-content {
-  
-  padding-bottom: 10vh;
-  width: 100%;
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  width: fit-content;
   /* Make the width take up the full available space */
   min-height: 100vh;
   /* Ensure the content at least fills the viewport height */
@@ -82,7 +84,6 @@ padding-bottom: 40px;
   /* Center horizontally */
   align-items: center;
   /* Center vertically */
-  min-height: 100vh;
   /* Full viewport height */
   overflow-x: hidden !important;
 
@@ -152,7 +153,7 @@ padding-bottom: 40px;
 
 }
 
- 
+
 
 .sidebar h2 {
   color: #c5c5c5;
@@ -218,7 +219,7 @@ padding-bottom: 40px;
   }
 }
 
- 
+
 
 /// contact me please
 
@@ -258,26 +259,34 @@ padding-bottom: 40px;
 // blog 
 
 .blog.embedded-page {
-  width: 88%;
-  height: 100%;
-  border: none; /* Remove border if needed */
-  position: absolute; /* or relative, based on parent positioning */
+  width: 100vh;
+  overflow: visible !important;
+  padding: 10px;
+  min-width: 80%!important;
+  background-color: #283227;
+  height: 90vh;
+  position: absolute;
+  /* or relative, based on parent positioning */
   top: 0;
-  left: 12%;
-  background-color: #283227!important;
+  border: 50px solid #283227;
+
+  /* Add your desired border color and width */
   &::-webkit-scrollbar {
-    display: none!important;
-}
+    display: none !important;
+  }
 }
 
 
 .blogDiv {
-  width: 100%; /* Adjust as needed */
-  height: 100vh; /* Adjust as needed (viewport height) */
-  position: absolute; /* Ensure positioning context */
+  width: 100%;
+  /* Adjust as needed */
+  height: 100vh;
+  /* Adjust as needed (viewport height) */
+  position: absolute;
+  /* Ensure positioning context */
 }
 
- 
+
 
 
 
@@ -291,7 +300,7 @@ padding-bottom: 40px;
 
   border-radius: 1px;
   border-radius: 7px;
- 
+
 
 }
 
@@ -305,9 +314,9 @@ padding-bottom: 40px;
   color: #040b14;
   min-width: 100vh;
   padding: 20px;
-  width: 90%  ;
+  width: 90%;
   /* Make it take up the full width */
-  height: 100vh  ;
+  height: 100vh;
   /* Make it take up the full height of the viewport */
 }
 
