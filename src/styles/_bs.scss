@@ -1,0 +1,511 @@
+ // regular 
+ .sidebar {
+     display: block; // Sidebar always visible
+ }
+
+
+
+ .typing {
+    color: #00b7ff!important;
+}
+ .mobileNav {
+     .socialLinks {
+         display: none;
+     }
+
+     .title {
+         display: flex; // Enable flexbox layout
+         align-items: center; // Align items vertically centered
+         gap: 20px; // Space between image and text
+
+         .profile-photo {
+             flex-shrink: 0; // Prevent image from shrinking
+         }
+
+         h2 {
+             margin: 0; // Remove default margin
+             text-align: left; // Align text to the left if needed
+         }
+
+         .social-links {
+             margin-top: 10px; // Space between name and social links
+             display: flex; // Use flexbox to align social links
+             gap: 10px; // Space between social link items
+         }
+     }
+
+     display: none; //   
+
+     text-align: center;
+     background-color: #040b14;
+     min-width: 45vh; // Make the navigation bar span the full width of the page
+     padding-bottom: 10px;
+     padding: 20px auto; // Center horizontally by setting left and right margins to auto
+
+     img {
+         display: block; // Ensure the image is treated as a block-level element
+         margin: 20px; // Center horizontally by setting left and right margins to auto
+         float: inline-start !important;
+     }
+
+     .navigation {
+         transition: transform 0.3s ease;
+         font-size: small !important;
+         width: 100%; // Make the navigation bar span the full width of the page
+         position: sticky; // Make it sticky
+         top: 0; // Stick it to the top
+         z-index: 9999; // Ensure it stays above other elements
+         background-color: #040b14; // Add background color if needed for better visibility
+
+         // Center horizontally
+         margin: 0 auto;
+         padding: 10px 0; // Adjust padding as needed
+
+         ul {
+             list-style-type: none; // Remove bullets
+             margin: 0;
+             padding: 0;
+             display: flex; // Display list items in a row
+             justify-content: center; // Center items horizontally
+             align-items: center; // Center items vertically
+         }
+
+         li {
+             padding: 9px;
+         }
+
+         a {
+             display: block; // Make the link fill the list item
+             color: #c5c5c5 !important;
+             text-align: center;
+             text-decoration: none; // Remove underline
+             padding: 8%; // Padding inside each button
+             font-size: 1.75vh; // Adjust font size as needed
+             font-weight: bold;
+             display: flex;
+             flex-direction: column; // Stack icon and text
+             align-items: center; // Center them horizontally
+
+             &:hover {
+                 background-color: #555; // Change background on hover
+                 color: #fff; // Change text color on hover
+             }
+
+             svg {
+                 margin-bottom: 5px; // Space between icon and text
+             }
+         }
+     }
+
+
+ }
+
+ .landingName {
+     color: rgb(255, 255, 255);
+     font-size: 90px !important;
+     padding-left: 4%;
+     padding-top: 10%;
+     overflow-wrap: break-word !important; // Ensure long words break and wrap
+ }
+
+
+
+ // Adjust styles for tablets (medium screens)
+ @media (max-width: 1024px) {
+    .contact-container {
+        position: relative;
+        padding: 20px !important;
+        color: #040b14;
+
+        display: block; // Enable flexbox
+ 
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .invitation-message{
+            text-align: justify;
+          }
+        .contact-details {
+             padding-bottom: 20px;
+
+            p {
+                font-size: 8px;
+                margin: 5px 0;
+
+                strong {
+                    color: #333;
+                }
+            }
+        }
+    }
+     .typing {
+         font-size: 20px; // Slightly smaller font for tablets
+     }
+     .about {
+        padding: 20px;
+        height: 700px !important;
+        overflow-y: scroll !important;
+
+        &::-webkit-scrollbar {
+            display: none;
+
+        }
+    }
+
+    .contact-container{
+             padding: 20px;
+            height: 700px !important;
+            overflow-y: scroll !important;
+    
+            &::-webkit-scrollbar {
+                display: none;
+    
+            }
+     }
+     .landingName {
+         font-size: 8vw !important; // Responsive font size relative to viewport width
+         padding-left: 5vw;
+         padding-top: 5vw;
+     }
+ }
+
+ // Adjust styles for small screens (e.g., mobile)
+ @media (max-width: 768px) {
+    .about {
+        padding: 20px;
+        overflow-y: scroll !important;
+
+        &::-webkit-scrollbar {
+            display: none;
+
+        }
+    }
+
+    .skillsContain {
+        overflow-y: scroll !important; // Enables scrolling
+        width: 20% !important;
+        color: #040b14;
+       height: 450px!important;
+        h1 {
+            font-size: large;
+        }
+
+        p {
+            padding: 20px;
+            font-size: medium;
+        }
+    }
+
+    .skill-list {
+        position: relative;
+
+        align-items: center;
+        text-align: center;
+        display: block;
+        grid-template-columns: repeat(auto-fit, minmax(5000, 1fr));
+        gap: 5px; // Adjust spacing between items as needed
+        padding: 0 !important;
+        width: 75vh !important;
+    }
+
+    .skillHeader {
+        width: 600px !important;
+        text-align: left !important;
+        font-size: small;
+        padding: 2px;
+    }
+
+     .typing {
+         font-size: 18px; // Smaller font for mobile
+         background-image: none; // Remove background image on mobile
+     }
+
+     .landingName {
+         font-size: 7vw !important; // Smaller responsive font size
+         padding-left: 4vw;
+         padding-top: 4vw;
+     }
+
+     .mobileNav{
+        display: flex;
+        .navigation{
+            li {
+                padding: 20px;
+            }
+            a {
+                display: block; // Make the link fill the list item
+                color: #c5c5c5 !important;
+                text-align: center;
+                text-decoration: none; // Remove underline
+                padding-inline: 30%; // Padding inside each button
+                font-size: 2.7vh; // Adjust font size as needed
+                font-weight: bold;
+                display: flex;
+                flex-direction: column; // Stack icon and text
+                align-items: center; // Center them horizontally
+   
+                &:hover {
+                    background-color: #555; // Change background on hover
+                    color: #fff; // Change text color on hover
+                }
+   
+                svg {
+                    margin-bottom: 5px; // Space between icon and text
+                }
+            }
+        }
+     }
+     .sidebar{
+        display: none;
+     }
+
+     .kevinBg {
+         background-image: none !important;
+         background-color: #333;
+         max-width: 50px !important;
+         min-width: 50px !important;
+     }
+
+ }
+
+ @media (max-width: 830px) {
+     .kevinBg {
+         background-image: none !important;
+         background-color: #333;
+         max-width: 50px !important;
+         min-width: 50vh !important;
+         position: relative;
+         right: 0;
+         z-index: 1;
+     }
+
+ }
+
+ // Adjust styles for extra small screens (e.g., very small mobile)
+ @media (max-width: 480px) {
+
+    .mobileNav{
+        .navigation{
+            li {
+                padding: 9px;
+            }
+            a {
+                display: block; // Make the link fill the list item
+                color: #c5c5c5 !important;
+                text-align: center;
+                text-decoration: none; // Remove underline
+                padding-inline: 10%; // Padding inside each button
+                font-size: 1.7vh; // Adjust font size as needed
+                font-weight: bold;
+                display: flex;
+                flex-direction: column; // Stack icon and text
+                align-items: center; // Center them horizontally
+   
+                &:hover {
+                    background-color: #555; // Change background on hover
+                    color: #fff; // Change text color on hover
+                }
+   
+                svg {
+                    margin-bottom: 5px; // Space between icon and text
+                }
+            }
+        }
+     }
+
+
+     .kevinBg {
+        position: relative; /* Make sure the container has a positioning context */
+        background-image: url("https://coding-corps.github.io/my-portfolio/img/kcBg.png") !important;
+        background-size: 150%; /* Zoom in by increasing the size percentage */
+        background-position: center; /* Adjust positioning as needed */
+        max-width: 50vh !important;    
+         padding: 0 !important;
+        left: 0 !important;
+        background-position: 95% 25%!important; /* Adjust these values as needed */
+
+        overflow: hidden; /* Ensure overlay doesn't overflow the container */
+    }
+    
+    
+    .kevinBg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.3); /* Adjust rgba values to get the desired lightness */
+        z-index: 1; /* Ensure the overlay is on top of the image */
+    }
+
+     .typing {
+         font-size: 16px !important; // Smallest font for extra small screens
+         color: #009bd9!important;
+     }
+
+     .landingName {
+         font-size: 10vw !important; // Smallest responsive font size
+         padding-left: 3vw;
+         padding-top: 5vw;
+         margin-top: 50px !important;
+         color: #ffffff;
+     }
+
+     .main-content {
+         // background-image: none !important; // Remove background image on mobile
+         margin-top: 50px;
+
+         padding: 0 !important;
+     }
+
+     .sidebar {
+         display: none;
+     }
+
+     .mobileNav {
+         display: block;
+     }
+
+     .app {
+         overflow-y: hidden;
+         padding-bottom: 20px;
+     }
+
+     .main-content {
+         padding: o !important;
+         overflow: visible; // Enables scrolling
+         padding-bottom: 40px;
+         margin: 0 !important;
+
+         // Hide scrollbar for Webkit browsers (Chrome, Safari, Edge)
+   
+
+     }
+
+ 
+
+     .contact-container {
+         position: relative;
+         left: 1px !important;
+         padding: 20px !important;
+         color: #040b14;
+         height: 400px!important;
+
+         display: block; // Enable flexbox
+         justify-content: center; // Center horizontally
+         align-items: center; // Center vertically
+
+
+         h1 {
+             margin-bottom: 20px;
+         }
+
+         .contact-details {
+             overflow-y: visible !important;
+             padding-bottom: 20px;
+             p {
+                 font-size: 8px;
+                 margin: 5px 0;
+
+                 strong {
+                     color: #333;
+                 }
+             }
+         }
+     }
+
+     .skillSection {
+         padding: 20px;
+         padding-top: 0!important;
+         overflow-y: scroll !important;
+         /* Enable vertical scrolling if the content exceeds the viewport height */
+         height: 75px!important;
+         margin-left: 0px;
+         box-shadow: none !important;
+         font-size: small;
+     }
+
+
+     .skillsContain {
+         overflow-y: scroll !important; // Enables scrolling
+         width: 20% !important;
+         color: #040b14;
+        height: 450px!important;
+         h1 {
+             font-size: large;
+         }
+
+         p {
+             padding: 20px;
+             font-size: medium;
+         }
+     }
+
+     .skill-list {
+         position: relative;
+
+         align-items: center;
+         text-align: center;
+         display: block;
+         grid-template-columns: repeat(auto-fit, minmax(5000, 1fr));
+         gap: 5px; // Adjust spacing between items as needed
+         padding: 0 !important;
+         width: 30vh !important;
+     }
+
+     .skillHeader {
+         width: 350px !important;
+         text-align: left !important;
+         font-size: small;
+         padding: 2px;
+     }
+
+
+
+     .blog {
+         padding: 20px;
+         margin: 20px;
+         min-width: 60% !important;
+         overflow: hidden;
+         /* Make it take up the full width */
+         height: 100vh;
+
+         &::-webkit-scrollbar {
+             display: none;
+         }
+     }
+     .contact-container{
+        padding: 20px;
+       overflow-y: scroll !important;
+       margin-bottom: 20px;
+      
+     }
+     .about {
+        width: 80%!important;
+        text-align: left!important;
+         height: 400px !important;
+         overflow-y: scroll !important;
+     }
+
+     .blog.embedded-page {
+        overflow: scroll!important;
+        width: 380px!important;
+        height: 100%;
+        margin-left: 0px!important;
+        padding-left: 0px!important;
+        border: none; /* Remove border if needed */
+        position: absolute; /* or relative, based on parent positioning */
+        top: 200px!important;
+        left: 0%!important;
+
+        &::-webkit-scrollbar {
+            display: none;
+
+        }
+      }
+      
+
+ }

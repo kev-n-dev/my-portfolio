@@ -1,0 +1,6 @@
+// Styles for dark mode
+@media (prefers-color-scheme: dark) {
+    .about, h1, p,a, .contact-container, strong {
+      color: #ffffff !important; // White color for dark mode
+    }
+}
