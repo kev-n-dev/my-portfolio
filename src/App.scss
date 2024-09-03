@@ -1,6 +1,7 @@
 /* src/App.css */
 @import 'styles/bs';
 @import 'styles/darkMode';
+@import 'styles/colours';
 
 body,
 html,
@@ -10,11 +11,6 @@ html,
   font-family: "Raleway", sans-serif;
   overflow: hidden;
   background-color: inherit;
-  color: #d4d4d4;
-
-  &.darkmode {
-    color: #ffffff !important; // Dark mode text color
-  }
 }
 
 
@@ -27,7 +23,6 @@ html,
 
 .about {
   text-align: justify !important;
-  color: #1e1e1e;
   padding: 20px;
   padding-bottom: 40px;
   width: auto;
@@ -156,7 +151,6 @@ html,
 
 
 .sidebar h2 {
-  color: #c5c5c5;
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 20px;
@@ -164,7 +158,6 @@ html,
 
 .sidebar ul {
   font-family: "Poppins", sans-serif;
-
   list-style-type: none;
   padding: 2px;
 }
@@ -174,17 +167,13 @@ html,
 }
 
 .sidebar ul li a {
-  color: #d4d4d4;
   text-decoration: none;
   display: flex;
 
   align-items: center;
 }
 
-.sidebar ul li a:hover {
-  color: #ffffff;
-}
-
+ 
 .sidebar ul li a svg {
   margin-right: 10px;
 }
@@ -223,9 +212,7 @@ html,
 
 /// contact me please
 
-.contactSocials a {
-  color: #040b14 !important;
-}
+
 
 .contact-container {
   padding: 20vh;
@@ -335,9 +322,7 @@ html,
 .skill-item {
   display: flex;
   flex-direction: column;
-  background-color: #f9f9f9; // Optional: background color for each item
-  border: 1px solid #ddd; // Optional: border around each item
-  border-radius: 8px; // Optional: rounded corners
+   border-radius: 8px; // Optional: rounded corners
   padding: 10px;
 }
 
@@ -346,8 +331,10 @@ html,
   margin-bottom: 10px;
 }
 
+.resume button {
+  margin: 10px;
+}
 .skill-progress {
-  background-color: #f0f0f0;
   border-radius: 4px;
   overflow: hidden;
   width: 100%;
@@ -355,7 +342,6 @@ html,
 
 .skill-progress-bar {
   height: 20px;
-  background-color: #51a1d3; // Green color, you can customize
   width: 0;
   transition: width 0.3s ease-in-out;
 }
