@@ -1,6 +1,5 @@
 /* src/App.css */
 @import 'styles/bs';
-@import 'styles/darkMode';
 @import 'styles/colours';
 
 body,
@@ -10,7 +9,6 @@ html,
   margin: 0;
   font-family: "Raleway", sans-serif;
   overflow: hidden;
-  background-color: inherit;
 }
 
 
@@ -90,7 +88,6 @@ html,
   padding: 20px;
   width: fit-content !important;
   /* Default fixed width */
-  background-color: #040b14;
   box-sizing: border-box;
   overflow: hidden;
   justify-content: center;
