@@ -1,0 +1,192 @@
+/* SCSS HEX */
+$azure-web: #FFFAFF;
+$celeste: #a6f5eaff;
+$tiffany-blue: #9bccc5ff;
+$verdigris: #42b0b8ff;
+$dark-cyan: #4d8f94ff;
+$dark-slate-gray: #2d5e66ff;
+$gunmetal: #16303dff;
+$rich-black: #040b14ff;
+$cerise: #D8315B;
+
+
+.kevinBg .typing   span{
+    color: $verdigris!important;
+}
+.navigation {
+    ul {
+        a {
+            color: $azure-web !important;
+
+            &:hover {
+                color: $verdigris !important;
+            }
+        }
+    }
+}
+
+.resume{
+    color: $rich-black;
+    button{
+        background-color: $verdigris;
+        &:hover{
+            background-color: $celeste!important;
+        }
+    }
+
+    .react-pdf__message{
+        color: $rich-black;
+
+    } 
+    
+    .react-pdf__message--error{
+        color: $cerise;
+    }
+
+}
+
+.about{
+    color: $rich-black;
+    li a {
+        color: $dark-cyan;
+    }
+    strong {
+        color: $dark-slate-gray;
+    }
+}
+
+ 
+
+.skillsContain{
+    color: $rich-black;
+    .skill-item{ 
+        background-color: $azure-web;
+        color: $verdigris;
+        .skill-progress{
+            
+            background-color: $celeste;
+            .skill-progress-bar{
+                background-color: $dark-cyan;
+            }
+        }
+    }
+
+}
+.title{
+    color: $azure-web!important;
+}
+
+.socialLinks a{
+    color: $azure-web !important;
+
+    &:hover {
+        color: $verdigris !important;
+    }
+}
+.social
+body,
+html,
+#root,
+.app {
+  color: $azure-web!important;
+  background-color: $azure-web!important;
+}
+
+.sidebar{
+    background-color: $rich-black;
+}
+
+
+.contact-container{
+    color: $rich-black!important;
+    
+    strong{
+        color: $verdigris!important;
+    }
+    a {
+        color: $verdigris;
+        &:hover{
+            color: $celeste;
+        }
+    }
+}
+
+
+
+// Dark Mode
+@media (prefers-color-scheme: dark) {
+    body,
+html,
+#root,
+.app {
+  color: $azure-web!important;
+  background-color: $gunmetal!important;
+}
+
+.skillsContain{
+    color: $azure-web;
+    .skill-item{ 
+        background-color: $azure-web;
+        color: $verdigris;
+        .skill-progress{
+            
+            background-color: $celeste;
+            .skill-progress-bar{
+                background-color: $dark-cyan;
+            }
+        }
+    }
+
+}
+.about{
+    color: $azure-web;
+    li a {
+        color: $celeste;
+    }
+    strong {
+        color: $verdigris;
+    }
+}
+.resume{
+    color: $azure-web;
+    button{
+        background-color: $verdigris;
+        &:hover{
+            background-color: $celeste!important;
+        }
+    }
+
+    .react-pdf__message{
+        color: $rich-black;
+
+    } 
+    
+    .react-pdf__message--error{
+        color: $cerise;
+    }
+
+}
+.sidebar{
+    background-color: $rich-black;
+}
+
+.contact-container{
+    color: $azure-web!important;
+    
+    strong{
+        color: $verdigris!important;
+    }
+    a {
+        color: $celeste;
+        &:hover{
+            color: $azure-web;
+        }
+    }
+}
+
+
+  }
+  
+ 
+
+
