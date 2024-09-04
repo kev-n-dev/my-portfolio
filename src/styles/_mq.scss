@@ -1,1 +1,425 @@
+ .mobileNav {
+  display: none;
+}
+@media (max-width: 345px) {
+  .ProfilePhoto img{
+    display: none!important;
+  }
  
+  .mobileNav {
+    display: block!important;
+  }
+  .headerBar{
+    nav {
+      ul {
+        li {
+          a {
+            font-size: x-small!important;
+          }
+  }
+}
+    }
+  }
+}
+
+// Adjust styles for extra small screens (e.g., very small mobile)
+@media (max-width: 480px) {
+  .mobileNav {
+    display: flex;
+    width: 780px;
+    .navigation{
+        padding-bottom: 0px;
+        width: 100%!important;
+    }
+    height: auto;
+    display: block;
+    .navigation {
+      li {
+          padding: 20px;
+      }
+
+      a {
+            text-align: center;
+          text-decoration: none; // Remove underline
+            font-weight: bold;
+          display: flex;
+          padding-inline: 30%; // Padding inside each button
+
+          flex-direction: column; // Stack icon and text
+          align-items: center; // Center them horizontally
+          svg {
+            margin-bottom: 5px; // Space between icon and text
+        }
+      }
+  }
+}
+    
+  .main{
+    margin-top: 8vh;
+  }
+
+  .main-content{
+   margin: 0!important;
+
+  }
+  .main-content,
+  .navBar {
+    max-width: 480px !important;
+    min-width: 360px !important;
+  }
+
+  .headerBar {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    .ProfilePhoto {
+      img {
+        border-radius: 50%;
+        width: 50px!important;
+        height: 50px!important;
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+      }
+  
+      h2 {
+        margin-top: 20px;
+        font-size: 2rem;
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+      }
+    }
+  
+    .navigation {
+      position: sticky;
+      top: 0; /* Sticks the navigation to the top when scrolling */
+      width: 100%; /* Makes sure the nav takes full width */
+      padding: 10px 0; /* Add some padding for spacing */
+      z-index: 20; /* Ensure it stays on top of other content */
+  
+      nav {
+        ul {
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+  
+          li {
+            margin: 0 5px;
+            
+            a {
+              text-decoration: none;
+              //  font-size: 0.8rem!important;
+              
+            
+            }
+          }
+        }
+      }
+    }
+  
+     
+  }
+  
+  /* Add styles for scrolling effect */
+  .app {
+    scroll-behavior: smooth;
+  }
+
+  .blog{
+    margin: 0!important;
+  }
+  
+  .scrolled .ProfilePhoto {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  .scrolled .ProfilePhoto img {
+    transform: scale(0.8); /* Optional: Slightly shrink the profile picture */
+  }
+  
+  .scrolled .ProfilePhoto h2 {
+    transform: translateY(-20px);
+  }
+  
+  /* You can apply the scrolled class using JavaScript */
+  
+
+
+  
+
+
+  .headerBar {
+    display: flex;
+    align-items: center;
+    /* Center children vertically */
+    position: relative;
+    /* Necessary for absolute positioning of titlee */
+    align-items: center;
+    /* Align items vertically centered */
+    justify-content: space-between;
+    /* Distribute space evenly */
+    width: 100%;
+    height: 150px !important;
+    /* Take up the full width of the container */
+    position: fixed;
+    /* Optional: if you want it to stay at the top when scrolling */
+    top: 0;
+    /* Optional: ensure it's at the top of the viewport */
+    left: 0;
+    /* Optional: ensure it stretches from the left edge */
+    right: 0;
+    /* Optional: ensure it stretches to the right edge */
+
+    .ProfilePhoto {
+      display: flex;
+      align-items: center;
+    
+      img {
+        // Adjust the size of the image if needed
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; // Makes the image circular
+      }
+    
+      h2 {
+        margin-left: 15px; // Space between the image and the text
+      }
+    }
+
+    
+
+ 
+
+    .socialLinks {
+      display: none;
+    }
+
+    .navigation {
+
+      // Ensure the nav fits within its space
+      nav {
+        ul {
+          display: flex; // Display the list items in a row
+          width: 100% !important; // Ensure the ul takes up the full width
+          list-style-type: none; // Remove default list styles
+          padding: 0;
+          padding-bottom: 10px; // Remove default padding
+          margin: 0;
+
+
+          li {
+            flex: 1; // Make each list item take up equal space (optional)
+
+            display: inline-block; // Make links display inline
+            margin: 10 0px; // Space between navigation items
+            padding: 0 5px;
+
+            a {
+              font-size: smaller;
+              text-decoration: none; // Remove underline from links
+              display: flex;
+              align-items: center; // Align icon and text vertically
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .kevinBg {
+    position: relative;
+    padding: 0 !important;
+    left: 0 !important;
+    overflow: visible;
+  
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url("https://coding-corps.github.io/my-portfolio/img/kcBg.png") !important;
+      background-size: cover; /* Ensure the image covers the entire area */
+      background-position: 95% 25% !important;
+      filter: grayscale(100%);
+      z-index: -1; /* Ensure it stays behind the text */
+    }
+  }
+  
+
+  .typing {
+    font-size: 16px !important; // Smallest font for extra small screens
+    color: #009bd9 !important;
+  }
+
+  .landingName {
+    font-size: 10vw !important; // Smallest responsive font size
+    padding-left: 3vw;
+    padding-top: 5vw;
+    margin-top: 50px !important;
+    color: #ffffff;
+  }
+
+  .main-content {
+    // background-image: none !important; // Remove background image on mobile
+    margin-top: 50px;
+
+   }
+
+  .sidebar {
+    display: none;
+  }
+
+
+  .app {
+    overflow-y: hidden;
+    padding-bottom: 20px;
+  }
+
+  .main-content {
+    padding: o !important;
+    overflow: scroll; // Enables scrolling
+    margin-bottom: -40px;
+    height: 500px !important;
+    ;
+    min-height: 0 !important;
+    ;
+
+    // Hide scrollbar for Webkit browsers (Chrome, Safari, Edge)
+
+
+  }
+
+
+
+  .contact-container {
+    position: relative;
+    left: 1px !important;
+    padding: 20px !important;
+    color: #040b14;
+    height: 500px !important;
+    display: block; // Enable flexbox
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically
+
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .contact-details {
+      overflow-y: visible !important;
+      padding-bottom: 20px;
+
+      p {
+        font-size: 8px;
+        margin: 5px 0;
+
+        strong {
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .skillSection {
+    padding: 20px;
+    padding-top: 0 !important;
+    overflow-y: scroll !important;
+    /* Enable vertical scrolling if the content exceeds the viewport height */
+    height: 75px !important;
+    margin-left: 0px;
+    box-shadow: none !important;
+    font-size: small;
+  }
+
+
+  .skillsContain {
+    overflow-y: scroll !important; // Enables scrolling
+    width: 20% !important;
+    height: 450px !important;
+
+    h1 {
+      font-size: large;
+    }
+
+    p {
+      padding: 20px;
+      font-size: medium;
+    }
+  }
+
+  .skill-list {
+    position: relative;
+
+    align-items: center;
+    text-align: center;
+    display: block;
+    grid-template-columns: repeat(auto-fit, minmax(5000, 1fr));
+    gap: 5px; // Adjust spacing between items as needed
+    padding: 0 !important;
+    width: 30vh !important;
+  }
+
+  .skillHeader {
+    width: 350px !important;
+    text-align: left !important;
+    font-size: small;
+    padding: 2px;
+  }
+
+
+
+  .blog {
+    padding: 20px;
+    margin: 20px;
+    min-width: 60% !important;
+    overflow: hidden;
+    /* Make it take up the full width */
+    height: 100vh;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .contact-container {
+    padding: 20px;
+    overflow-y: scroll !important;
+    margin-bottom: 50px !important;
+
+  }
+
+  .about {
+    width: 80% !important;
+    text-align: left !important;
+    height: 400px !important;
+    overflow-y: scroll !important;
+  }
+
+  .blog.embedded-page {
+    overflow: hidden !important;
+    width: 90% !important;
+    margin-left: 0px !important;
+    padding: 20px !important;
+    border: none;
+    /* Remove border if needed */
+    position: absolute;
+    /* or relative, based on parent positioning */
+    top: 19.96% !important;
+    border: 0 !important;
+    left: 0% !important;
+
+    &::-webkit-scrollbar {
+      display: none !important;
+    }
+  }
+
+
+}

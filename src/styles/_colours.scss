@@ -9,7 +9,9 @@ $gunmetal: #16303dff;
 $rich-black: #040b14ff;
 $cerise: #D8315B;
 
-
+.headerBar{
+    background-color: $rich-black;
+}
 .kevinBg .typing   span{
     color: $verdigris!important;
 }
@@ -72,7 +74,7 @@ $cerise: #D8315B;
     }
 
 }
-.title{
+.titlee{
     color: $azure-web!important;
 }
 
