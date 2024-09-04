@@ -134,14 +134,11 @@ html,
   position: absolute;
   transition: transform 0.3s ease;
   height: 100vh;
-  min-width: 2000px;
-
-  width: auto;
+  width: 100vw;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  margin: 0;
-  background-position-x: right;
+   background-position-x: right;
 
 }
 
