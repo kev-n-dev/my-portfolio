@@ -452,9 +452,9 @@
 // Adjust styles for extra small screens (e.g., very small mobile)
 @media (min-width: 346px) and (max-width: 480px) {
   .main{
-    position: absolute; // Main container margin reset
+    position: absolute!important; // Main container margin reset
     bottom: 80px;
-    right: 0;
+    left: 0!important;
   }
 
 
@@ -810,9 +810,10 @@
 
   .skillsContain {
     overflow-y: scroll !important; // Enables scrolling
-    width: 20% !important;
+    width: 80vw!important;
     height: 450px !important;
-
+    position: relative;
+    
     h1 {
       font-size: large;
     }
@@ -1326,23 +1327,26 @@
 
 
 
-@media  (min-width: 781px) and (max-width: 1349px) {
+@media  (min-width: 781px) {
+  .skillsContain{
+    position: relative;
+    width: 80vw!important;
+  }
   .mobileNav {
     display: none !important;
   }
 
   .about{
     width: 80vw!important;
-    right: 15%!important;
-    position: absolute!important; // Main container margin reset
+     position: relative!important; // Main container margin reset
     right: 0!important;
 
   }
   .main{
     position: absolute!important; // Main container margin reset
-     width: 85vw;
+     width: 70vw;
      height: 80vh;
-      right: 0!important;
+      left: 13.0vw!important;
      top: 0!important;
   }
   .sidebar{
@@ -1374,8 +1378,8 @@
       background-size:  cover!important;
 
       background-image: url("https://coding-corps.github.io/my-portfolio/img/kcBg.png") !important;
-      background-size: cover; /* Ensure the image covers the entire area */
-      background-position: -19vw 25% ;
+      background-size:cover; /* Ensure the image covers the entire area */
+      background-position: -11vw 25%!important; ;
       z-index: 0!important; 
       filter: grayscale(100%);
 
@@ -1389,5 +1393,9 @@
     .typing{
       font-size: 30px!important;
     }
+  }
+
+  .blog.embedded-page{
+    width: 80vw!important;
   }
 }
