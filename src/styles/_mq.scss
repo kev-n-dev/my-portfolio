@@ -454,6 +454,8 @@
   .main{
     position: absolute!important; // Main container margin reset
     bottom: 80px;
+    top: 25vh;
+    height: fit-content;
     left: 0!important;
   }
 
@@ -602,7 +604,8 @@
     /* Align items vertically centered */
     justify-content: space-between;
     /* Distribute space evenly */
-    width: 100%;
+    max-width: 100%;
+    width: 100vw;
     height: 150px !important;
     /* Take up the full width of the container */
     position: fixed;
@@ -801,7 +804,7 @@
     padding-top: 0 !important;
     overflow-y: scroll !important;
     /* Enable vertical scrolling if the content exceeds the viewport height */
-    height: 75px !important;
+    height: 50vh !important;
     margin-left: 0px;
     box-shadow: none !important;
     font-size: small;
@@ -811,9 +814,8 @@
   .skillsContain {
     overflow-y: scroll !important; // Enables scrolling
     width: 80vw!important;
-    height: 450px !important;
-    position: relative;
-    
+    height: 70vh !important;
+     
     h1 {
       font-size: large;
     }
