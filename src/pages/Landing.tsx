@@ -2,14 +2,8 @@ import React from 'react';
 import TypingEffect from '../components/TypingEffect'; // Ensure the path is correct
 
 const Landing: React.FC = () => {
-  const backgroundImageUrl = 'img/kcBg.png'; // Replace with your image path
-
-  const containerStyle: React.CSSProperties = {
-    backgroundImage: `url(${backgroundImageUrl})`,
-   };
-
   return (
-    <div className='kevinBg' style={containerStyle}>
+    <div className='kevinBg' >
       <div >
         <h1 >
           <span className='landingName'  >Kevin Christopher</span> <br />
