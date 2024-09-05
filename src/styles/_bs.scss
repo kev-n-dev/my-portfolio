@@ -22,13 +22,13 @@
  // Adjust styles for tablets (medium screens)
  @media (max-width: 1024px) {
     .ProfilePhoto {
-        display: flex;
+        display: inline;
         align-items: center;
       
         img {
           // Adjust the size of the image if needed
           width: 100px!important;
-          height: 100px!important;
+          height: 100px;
           border-radius: 50%; // Makes the image circular
         }
     }
