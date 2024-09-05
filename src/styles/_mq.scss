@@ -1,13 +1,22 @@
  .mobileNav {
   display: none;
 }
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  display: block!important;
+}
 .main{
-  position: absolute; // Main container margin reset
+  position: fixed; // Main container margin reset
   bottom: 0px;
   right: 0;
-  width: 100vw;
+  width: auto;
   height: 70vh;
 }
+ 
+
 
 @media (max-width: 345px) {
   .sidebar{
@@ -929,10 +938,10 @@
     
 .main{
   position: absolute!important; // Main container margin reset
-  bottom: 0px;
-  width: 100px;
-  left: 50px;
-  right: 0;
+   width: 100vw;
+   height: 80vh;
+  left: 00px;
+  bottom: 0!important;
 }
   .main-content{
    margin: 0!important;
@@ -1320,6 +1329,21 @@
 @media  (min-width: 781px) and (max-width: 1349px) {
   .mobileNav {
     display: none !important;
+  }
+
+  .about{
+    width: 80vw!important;
+    right: 15%!important;
+    position: absolute!important; // Main container margin reset
+    right: 0!important;
+
+  }
+  .main{
+    position: absolute!important; // Main container margin reset
+     width: 85vw;
+     height: 80vh;
+      right: 0!important;
+     top: 0!important;
   }
   .sidebar{
     display: block !important;
