@@ -9,6 +9,10 @@ $gunmetal: #16303dff;
 $rich-black: #040b14ff;
 $cerise: #D8315B;
 
+
+.workContent{
+    color: $rich-black;
+}
 .headerBar{
     background-color: $rich-black;
 }
@@ -127,7 +131,9 @@ html,
   color: $azure-web!important;
   background-color: $gunmetal!important;
 }
-
+.workContent{
+    color: $azure-web;
+}
 .skillsContain{
     color: $azure-web;
     .skill-item{ 
