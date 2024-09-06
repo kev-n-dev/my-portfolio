@@ -24,7 +24,7 @@ html,
   text-align: justify !important;
   padding: 20px;
   padding-bottom: 40px;
-  width: auto;
+  width: 90vw;
   list-style-type: none;
 
   ul {
@@ -37,8 +37,8 @@ html,
 .about {
   padding-top: 10px;
   padding-bottom: 40px;
-  padding-left: 40px;
-  height: 600px;
+ 
+  height: 90vh;
   overflow-y: scroll !important;
 }
 
@@ -49,7 +49,8 @@ html,
   float: inline-start;
   /* Ensure this remains correctly positioned */
   margin-right: 20px;
-  width: 30%;
+  width: auto;
+  height: 400px!important;
   padding-top: 1%;
 }
 
@@ -220,19 +221,20 @@ html,
 /// contact me please
 
 
-
-.contact-container {
-  padding: 20vh;
+ 
+.contact-container  {
+   padding: 50px;
   position: relative;
-  left: 15%;
-  color: #040b14;
-  border-radius: 8px;
-  text-align: justify;
-  max-width: 600px;
-  margin: 0 auto;
-
+   border-radius: 8px;
+   text-align: left;
+   margin: 0 auto;
+  width: 50vw!important;
+  .contactSocials{
+    float: inline-start;
+    padding: 10px;
+  }
   h1 {
-    text-align: center;
+    // text-align: center;
     margin-bottom: 20px;
   }
 
@@ -355,3 +357,8 @@ html,
   text-align: left !important;
   font-size: large;
 }
+
+.aboutText  {
+  padding: 10px!important;
+  text-align: justify;
+ }

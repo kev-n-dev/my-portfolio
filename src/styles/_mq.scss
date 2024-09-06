@@ -314,10 +314,7 @@
     padding: o !important;
     overflow: scroll; // Enables scrolling
     margin-bottom: -40px;
-    height: 500px !important;
-    ;
-    min-height: 0 !important;
-    ;
+  
 
     // Hide scrollbar for Webkit browsers (Chrome, Safari, Edge)
 
@@ -425,9 +422,9 @@
   }
 
   .about {
-    width: 80% !important;
+    width: 100vw;
     text-align: left !important;
-    height: 400px !important;
+    height: 100vh !important;
     overflow-y: scroll !important;
   }
 
@@ -758,10 +755,7 @@
     padding: o !important;
     overflow: scroll; // Enables scrolling
     margin-bottom: -40px;
-    height: 500px !important;
-    ;
-    min-height: 0 !important;
-    ;
+ 
 
     // Hide scrollbar for Webkit browsers (Chrome, Safari, Edge)
 
@@ -869,9 +863,9 @@
   }
 
   .about {
-    width: 80% !important;
+    width: 100vw;
     text-align: left !important;
-    height: 400px !important;
+    height: 100vh !important;
     overflow-y: scroll !important;
   }
 
@@ -1302,9 +1296,9 @@
   }
 
   .about {
-    width: 80% !important;
+    width: 100vw;
     text-align: left !important;
-    height: 400px !important;
+    height: 100vh !important;
     overflow-y: scroll !important;
   }
 
@@ -1340,8 +1334,9 @@
   }
 
   .about{
-    width: 80vw!important;
-     position: relative!important; // Main container margin reset
+    padding: 20px;
+    width: 100vw;
+    position: relative!important; // Main container margin reset
     right: 0!important;
 
   }
@@ -1407,4 +1402,10 @@
 
  
   }
+}
+
+
+
+.aboutProfile{
+  height: 100vh!important;
 }

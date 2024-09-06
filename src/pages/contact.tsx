@@ -22,11 +22,12 @@ const Contact: React.FC = () => {
       <div className='contactSocials'>
       <SocialLinks></SocialLinks>
       </div>
+      <br/>
+      <br/>
       <div className="invitation-message">  <p >
-        If you’re a recruiter or someone interested in working with<br></br>
-         a dedicated and experienced software developer, feel free to reach out. <br></br>
-        I’m always open to new opportunities and collaborations. <br></br>
-        Let’s connect!
+        If you’re a recruiter or someone interested in working with 
+         a dedicated and experienced software developer, feel free to reach out. 
+        I’m always open to new opportunities and collaborations.  
       </p></div>
     
       <div className="contact-details">
