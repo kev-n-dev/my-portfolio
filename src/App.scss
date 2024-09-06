@@ -290,9 +290,9 @@ html,
 // skills 
 .skillSection {
   padding: 20px;
-  overflow-y: scroll !important;
+  overflow-y: visible !important;
   /* Enable vertical scrolling if the content exceeds the viewport height */
-  height: 400px;
+  height:fit-content;
 
   border-radius: 1px;
   border-radius: 7px;
@@ -303,10 +303,10 @@ html,
  
 
 .skillsContain {
-
+overflow: visible;
   min-width: 100vh;
   padding: 20px;
-  width: 90%;
+  width: 20%;
   /* Make it take up the full width */
   height: 100vh;
   /* Make it take up the full height of the viewport */

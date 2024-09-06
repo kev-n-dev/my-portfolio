@@ -28,7 +28,7 @@ const Profile: React.FC = () => {
 
 
   return (
-    <div className="row gy-4 justify-content-center">
+    <div className="bout">
       <div className="col-lg-4">
         <img className="proPicImage"src="img/kevin2.png" alt="Kevin" />
       </div>

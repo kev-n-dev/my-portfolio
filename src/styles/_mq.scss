@@ -364,16 +364,16 @@
     overflow-y: scroll !important;
     /* Enable vertical scrolling if the content exceeds the viewport height */
     height: 75px !important;
-    margin-left: 0px;
+     margin-left: 0px;
     box-shadow: none !important;
     font-size: small;
   }
 
 
   .skillsContain {
-    overflow-y: scroll !important; // Enables scrolling
-    width: 20% !important;
-    height: 450px !important;
+    overflow-y: visible !important; // Enables scrolling
+    width: 80%!important;
+    height: 100vh !important;   
 
     h1 {
       font-size: large;
@@ -809,7 +809,7 @@
   .skillSection {
     padding: 20px;
     padding-top: 0 !important;
-    overflow-y: scroll !important;
+    overflow-y: visible !important;
     /* Enable vertical scrolling if the content exceeds the viewport height */
     height: 70vh !important;
     margin-left: 0px;
@@ -819,9 +819,9 @@
 
 
   .skillsContain {
-    overflow-y: scroll !important; // Enables scrolling
-    width: 80vw!important;
-    height: 70vh !important;
+    overflow-y: visible !important; // Enables scrolling
+    width: 80%!important;
+    height: 100vh !important;
      
     h1 {
       font-size: large;
@@ -835,10 +835,12 @@
 
   .skill-list {
     position: relative;
-
+    height: 100vh;
+    overflow: hidden;
     align-items: center;
     text-align: center;
     display: block;
+    overflow-y: visible;
     grid-template-columns: repeat(auto-fit, minmax(5000, 1fr));
     gap: 5px; // Adjust spacing between items as needed
     padding: 0 !important;
@@ -881,6 +883,36 @@
     padding-bottom: 10px!important;
     overflow-y: scroll !important;
   }
+
+
+  .about {
+    .aboutProfile , .aboutText{
+      text-align: left!important;
+    }
+
+
+    .proPicImage{
+      margin-left: 10% !important;
+      margin-right: 10% !important;
+      display: block; // Ensure it's a block-level element
+      width: auto;
+      height: 400px !important;
+      padding-top: 1%;
+      padding-bottom: 5%;
+    }
+
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically if needed
+  
+    .proPicImage {
+      width: auto;
+      height: 400px !important;
+      padding-top: 1%;
+    }
+  
+}
+
+  
 
   .blog.embedded-page {
     overflow: hidden !important;
@@ -1242,7 +1274,7 @@
   .skillSection {
     padding: 20px;
     padding-top: 0 !important;
-    overflow-y: scroll !important;
+    overflow-y: visible !important;
     /* Enable vertical scrolling if the content exceeds the viewport height */
     height: 75px !important;
     margin-left: 0px;
@@ -1252,9 +1284,8 @@
 
 
   .skillsContain {
-    overflow-y: scroll !important; // Enables scrolling
-    width: 20% !important;
-    height: 450px !important;
+    width: 80%!important;
+     height: 100vh !important;
 
     h1 {
       font-size: large;
