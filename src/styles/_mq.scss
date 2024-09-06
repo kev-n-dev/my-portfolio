@@ -2,7 +2,7 @@
   display: none;
 }
 .workContent{
-  
+
   width: 80vw;
   margin: 20px;
   padding: 20px;
@@ -904,14 +904,13 @@
   .mobileNav {
     display: flex!important;
     width: 100vw;
-    .navigation{
-        padding-bottom: 0px;
-        width: 100%!important;
 
-    }
     height: auto;
     display: block;
+ 
     .navigation {
+      padding-bottom: 0px;
+      width: 100%!important;
       li {
           padding: 20px;
       }
