@@ -454,11 +454,18 @@
 
 // Adjust styles for extra small screens (e.g., very small mobile)
 @media (min-width: 346px) and (max-width: 480px) {
+  .workContent{
+    overflow: scroll;
+
+    height: 70vh !important;
+    padding-bottom: 10px!important;
+    overflow-y: scroll !important;  }
   .main{
     position: absolute!important; // Main container margin reset
     bottom: 80px;
+    margin-bottom: 50px;
     top: 150px!important;
-    height: fit-content;
+    height: fit-content!important;
     left: 0!important;
   }
 
@@ -804,7 +811,7 @@
     padding-top: 0 !important;
     overflow-y: scroll !important;
     /* Enable vertical scrolling if the content exceeds the viewport height */
-    height: 50vh !important;
+    height: 70vh !important;
     margin-left: 0px;
     box-shadow: none !important;
     font-size: small;
@@ -870,7 +877,8 @@
   .about {
     width: 100vw;
     text-align: left !important;
-    height: 100vh !important;
+    height: 70vh !important;
+    padding-bottom: 10px!important;
     overflow-y: scroll !important;
   }
 
