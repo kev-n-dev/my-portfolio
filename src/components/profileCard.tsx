@@ -67,7 +67,7 @@ const Profile: React.FC = () => {
                 <i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span>
               </li>
               <li>
-                <i className="bi bi-chevron-right"></i> <strong>Blog:</strong> <span><a href='https://coding-corps.github.io/CodingCompass'>https://coding-corps.github.io/CodingCompass/</a></span>
+                <i className="bi bi-chevron-right"></i> <strong>Blog:</strong> <span><a href='https://kev-n-dev.github.io/CodingCompass'>https://kev-n-dev.github.io/CodingCompass/</a></span>
               </li>
             </ul>
           </div>

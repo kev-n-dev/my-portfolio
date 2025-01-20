@@ -26,7 +26,7 @@ const SocialLinks: React.FC = () => {
       <SocialLink href="https://www.facebook.com/kevin.christopher.737448" className="facebook">
         <i className="bi bi-facebook"></i>
       </SocialLink>
-      <SocialLink href="https://github.com/coding-corps" className="github">
+      <SocialLink href="https://github.com/kev-n-dev" className="github">
         <i className="bi bi-github"></i>
       </SocialLink>
       <SocialLink href="mailto:kevin.christopher.93@outlook.com" className="email">

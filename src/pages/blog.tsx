@@ -7,7 +7,7 @@ const Blog: React.FC = () => {
 
 <div  >
 <iframe  
-  src="https://coding-corps.github.io/CodingCompass/#/" 
+  src="https://kev-n-dev.github.io/CodingCompass/#/" 
   className=" blog embedded-page"
    allowFullScreen
 ></iframe>

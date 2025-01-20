@@ -3,7 +3,7 @@ import React from 'react';
 import PdfViewer from '../components/PdfViewer';
 
 const MySkills: React.FC = () => {
-  const pdfUrl = 'https://coding-corps.github.io/my-portfolio/files/Profile.pdf'; // Replace with your PDF URL
+  const pdfUrl = 'https://kev-n-dev.github.io/my-portfolio/files/Profile.pdf'; // Replace with your PDF URL
 
 
   return (
